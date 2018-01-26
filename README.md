@@ -3,4 +3,4 @@ Now , Run Android In Any Pc Easily
 
 
 ## Testing   
-![Home](https://github.com/Anikeshpatel/Phony/raw/master/screenshot/Untitled-1.png)
+![Home](https://github.com/Anikeshpatel/Phony/raw/master/screenshot/Untitled-2.png)
