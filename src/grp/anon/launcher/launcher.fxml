@@ -4,9 +4,10 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -41,28 +42,24 @@
     <center>
         <AnchorPane fx:id="screen" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="14.0" layoutY="470.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" styleClass="apps" text="Phone" />
-            <Button layoutX="111.0" layoutY="470.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" styleClass="apps" text="Contact" />
-            <Button layoutX="216.0" layoutY="470.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" styleClass="apps" text="Gallery" />
-            <Button layoutX="308.0" layoutY="470.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" styleClass="apps" text="Camera" />
             <Label layoutX="24.0" layoutY="518.0" text="Phone" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="15.0" />
+                  <Font size="15.0" />
                </font>
             </Label>
             <Label layoutX="116.0" layoutY="519.0" text="Contact" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="15.0" />
+                  <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="226.0" layoutY="519.0" text="Gallery" textFill="WHITE">
+            <Label layoutX="217.0" layoutY="519.0" text="Play Store" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="15.0" />
+                  <Font size="15.0" />
                </font>
             </Label>
             <Label layoutX="316.0" layoutY="519.0" text="Camera" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="15.0" />
+                  <Font size="15.0" />
                </font>
             </Label>
             <Pane layoutX="171.0" layoutY="431.0" prefHeight="44.0" prefWidth="54.0">
@@ -78,6 +75,55 @@
                   <Font size="15.0" />
                </font>
             </JFXTextField>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="19.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/product_logo_phone_round_launcher_color_48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="116.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/ic_contacts_launcher.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="223.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/ic_round_launcher_play_store.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="312.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/ic_camera.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="314.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/011-facebook.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="19.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/012-whatsapp-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="223.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/005-youtube.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="55.0" layoutX="116.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/003-chrome.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="19.0" layoutY="395.0" text="Whatsapp" textFill="WHITE" />
+            <Label layoutX="122.0" layoutY="395.0" text="Chrome" textFill="WHITE" />
+            <Label layoutX="228.0" layoutY="395.0" text="Youtube" textFill="WHITE" />
+            <Label layoutX="313.0" layoutY="395.0" text="Facebook" textFill="WHITE" />
+            <ImageView fitHeight="37.0" fitWidth="28.0" layoutX="328.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons/004-microphone-of-voice.png" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
     </center>
    <bottom>
@@ -91,9 +137,30 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton prefHeight="42.0" prefWidth="96.0" styleClass="nav-bar" text="&lt;" />
-            <JFXButton prefHeight="38.0" prefWidth="214.0" styleClass="nav-bar" text="^" GridPane.columnIndex="1" />
-            <JFXButton prefHeight="37.0" prefWidth="90.0" styleClass="nav-bar" text="=" GridPane.columnIndex="2" />
+            <JFXButton prefHeight="42.0" prefWidth="96.0" styleClass="nav-bar" text=" ">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton prefHeight="38.0" prefWidth="214.0" styleClass="nav-bar" text=" " GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton prefHeight="37.0" prefWidth="90.0" styleClass="nav-bar" text=" " GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/context.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
          </children>
       </GridPane>
    </bottom>

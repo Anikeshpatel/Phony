@@ -5,9 +5,9 @@
 	-fx-background-color: #2a2e37;
 }
 #screen{
-	-fx-background-image:url("../resources/wallpaper.jpg");
+	-fx-background-image:url("../resources/wallpaper2.jpg");
 	-fx-background-position:center;
-	
+	-fx-background-size: 400 700;
 }
 .nav-bar{
 	-fx-background-color: #000000;
