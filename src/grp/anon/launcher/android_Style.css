@@ -1,0 +1,14 @@
+*{
+
+}
+.button{
+	-fx-background-color: rgba(0,0,0,0.0);
+}
+#status_bar{
+	-fx-background-color: #2a2e37;
+}
+#screen{
+	-fx-background-image:url("../resources/wallpaper.jpg");
+	-fx-background-position:center;
+	
+}
