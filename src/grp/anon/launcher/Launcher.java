@@ -13,7 +13,6 @@ public class Launcher extends Application {
         primaryStage.setTitle("Phony - The Android Simulator");
         primaryStage.show();
     }
-
     public static void main(String[] args) {
         launch(args);
     }
