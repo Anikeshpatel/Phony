@@ -75,6 +75,10 @@ public class Calcy implements Initializable {
 
     @FXML
     private JFXButton divBtn;
+
+
+    private Double ans = 0.0;
+    private Character operation = '+';
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -119,6 +123,8 @@ public class Calcy implements Initializable {
                 }
                 break;
             case "addBtn":
+                operation = '+';
+
                 show_status.appendText(" + ");
                 break;
             case "subBtn":
@@ -141,8 +147,25 @@ public class Calcy implements Initializable {
     }
     private void getAns(){
         String data = show_status.getText();
-        Integer firstNo = Integer.parseInt(data.substring(0,data.indexOf("+")).trim());
-        Integer secondNo = Integer.parseInt(data.substring(data.indexOf("+")+1,data.length()).trim());
+        Long firstNo = Long.parseLong(data.substring(0,data.indexOf("+")).trim());
+        Long secondNo = Long.parseLong(data.substring(data.indexOf("+")+1,data.length()).trim());
         show_ans.setText(String.valueOf(firstNo + secondNo));
+    }
+
+    private void calculate(Double firstNo,Double lastNo,Character operation){
+        switch (operation){
+            case '+':
+                show_ans.setText(String.valueOf(firstNo + lastNo));
+                break;
+            case '-':
+                show_ans.setText(String.valueOf(firstNo - lastNo));
+                break;
+            case '*':
+                show_ans.setText(String.valueOf(firstNo * lastNo));
+                break;
+            case '/':
+                show_ans.setText(String.valueOf(firstNo / lastNo));
+                break;
+        }
     }
 }
